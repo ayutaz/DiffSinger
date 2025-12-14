@@ -2,8 +2,27 @@
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2105.02446)
 [![GitHub Stars](https://img.shields.io/github/stars/MoonInTheRiver/DiffSinger?style=social)](https://github.com/MoonInTheRiver/DiffSinger)
 [![downloads](https://img.shields.io/github/downloads/MoonInTheRiver/DiffSinger/total.svg)](https://github.com/MoonInTheRiver/DiffSinger/releases)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=TTSDemo)](https://huggingface.co/spaces/NATSpeech/DiffSpeech) 
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=TTSDemo)](https://huggingface.co/spaces/NATSpeech/DiffSpeech)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=SVSDemo)](https://huggingface.co/spaces/Silentlin/DiffSinger)
+
+## About This Fork
+
+This is a fork of [MoonInTheRiver/DiffSinger](https://github.com/MoonInTheRiver/DiffSinger) with modifications for **Windows + uv** environment setup.
+
+### Changes from Original
+
+- Fix `scipy.signal.kaiser` import for newer scipy versions
+- Fix UTF-8 encoding for YAML config files on Windows
+- Fix Windows path regex in checkpoint loading
+- Add `pyproject.toml` for [uv](https://docs.astral.sh/uv/) package manager
+- Add setup guide: [docs/SetupGuide.md](docs/SetupGuide.md)
+
+### Quick Start (Windows + uv)
+
+See [docs/SetupGuide.md](docs/SetupGuide.md) for detailed instructions.
+
+---
+
 
 
 This repository is the official PyTorch implementation of our AAAI-2022 [paper](https://arxiv.org/abs/2105.02446), in which we propose DiffSinger (for Singing-Voice-Synthesis) and DiffSpeech (for Text-to-Speech).
