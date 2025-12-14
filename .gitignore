@@ -3,3 +3,14 @@
 __pycache__/
 *.sh
 local_tools/
+# uv / Python
+.venv/
+uv.lock
+.python-version
+
+# Checkpoints and outputs
+checkpoints/*/
+infer_out/
+
+# Auto-generated
+main.py
